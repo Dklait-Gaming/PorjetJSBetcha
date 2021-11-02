@@ -4,6 +4,7 @@ Grille d'auto-évaluation Mehdi IVANCICH <br>
 
 
 Grille de notation BACK (sur 33 points): 9/33 <br>
+--------------------------------------------------------------------------
 
 Les users sont stockés en BDD : 1 point -> FAIT <br>
 Les mots de passe sont stockés en base de données sous forme hashée+salée avec bcryptjs : 1 point -> FAIT <br>
@@ -37,6 +38,9 @@ Si le lot arrive sur l'emplacement d'un joueur, ce joueur remporte le lot (vainq
 
 
 Grille de notation FRONT (sur 24 points): Entre 10 et 13/24 (Pouvez vous m'ajouter le point bonus demandé à la fin svp) <br>
+
+-------------------------------------------------------------------------------------------------------------------
+
 
 Il y a un bouton "créer un compte" : 2 points -> FAIT <br>
 Il y a un bouton "s'authentifier" : 1 point -> FAIT <br>
