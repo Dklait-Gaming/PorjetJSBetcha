@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://image.noelshack.com/fichiers/2021/43/2/1635249876-unnamed-1.png" />
+    <script src="https://kit.fontawesome.com/2785f68fd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen" type="text/css" href="../views/Style/style.css"/>
+
+    <style>
+        body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFC0CB;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: royalblue;
+    color: white;
+}
+
+
+/*Page d'accueil*/
+
+ h1{
+    animation: text 6s steps(38) infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'consolas';
+    font-size: 60px;
+    width: 0ch;
+    border-right: 3px solid black;
+}
+
+@keyframes text{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width: 38ch;
+    }
+}
+
+
+h2{
+    font-size: 40px;
+    color: royalblue;
+    font-family: sans-serif; 
+}
+
+    </style>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+document.body.style.backgroundImage="url('violet clair.jpg')";
+
+});
+</script>
+
+
+
+</head>
+<body>
+
+        <div class="topnav">
+            <a class="active" href="http://localhost:3000/">Accueil <i class="fas fa-home"></i></a>
+            <a href="http://localhost:3000/inscription">Inscription <i class="fas fa-user-plus"></i></a>
+            <a href="http://localhost:3000/connexion">Connexion <i class="fas fa-address-card"></i></a>
+            <a href="http://localhost:3000/create_game">Créer une partie <i class="fas fa-plus-square"></i></a>
+            <a href="http://localhost:3000/game">Jouer <i class="fas fa-gamepad"></i></a>
+        </div>
+
+        <form action="/connexion" method="post"> 
+        <div>
+            <center>
+                    <h2>Connexion</h2>
+                    <label for="name">Pseudo</label><br><br>
+                    <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" value="" required minlength="1" maxlength="99"><br><br>
+        
+                    <label for="pass">Mot de passe</label><br><br>
+                    <input type="password" placeholder="Votre mot de passe" id="password" name="password" required minlength="1" maxlength="99" value=""><br><br>
+             
+                    <input type="submit" value="Valider">
+                    <input type="reset" value="annuler">
+            </center>  
+        </form> 
+        </div>
+
+    <script src="../views/serveur.js"></script> 
+</body>
+</html>

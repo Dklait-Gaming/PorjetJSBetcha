@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFC0CB;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: royalblue;
+    color: white;
+}
+
+
+/*Page d'accueil*/
+
+h1{
+    animation: text 6s steps(38) infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'consolas';
+    font-size: 60px;
+    width: 0ch;
+    border-right: 3px solid black;
+}
+
+@keyframes text{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width: 38ch;
+    }
+}
+
+
+h2{
+    font-size: 40px;
+    color: royalblue;
+    font-family: sans-serif;
+}
+
+/*Page d'accueil*/
